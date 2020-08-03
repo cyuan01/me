@@ -5,9 +5,12 @@ import { GoLocation } from 'react-icons/go'
 import { FaLinkedin } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import IdCard from './IdCard'
+import { IoIosPaper } from 'react-icons/io'
+import { GoHeart } from 'react-icons/go'
 import ProjectItem from './ProjectItem'
 import medium from '../assets/medium.png'
 import Skills from './Skills'
+import Pdf from '../assets/resume.pdf';
 
 class Home extends React.Component {
     constructor(props) {
@@ -42,6 +45,10 @@ class Home extends React.Component {
                 'C++': {
                     active: false,
                     skill: 'C++'
+                },
+                'C': {
+                  active: false,
+                  skill: 'C'
                 },
                 'HTML': {
                     active: false,
@@ -78,6 +85,7 @@ class Home extends React.Component {
                 style={{
                     display: 'flex',
                     flex: 1,
+                    flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
                     backgroundColor: "#1f2236",
@@ -118,6 +126,9 @@ class Home extends React.Component {
                             </p>
                         </a>
                     </div>
+                    <br />
+                    <p className="subTitleBlurb CG Txt">In a rush?</p>
+                    <a href={Pdf} className="resume FC" target="_blank"><IoIosPaper /> My Resume</a>
 
                     {/* <IdCard /> */}
 
@@ -137,7 +148,7 @@ class Home extends React.Component {
                         />
                     </div>
                     <div style={{ marginTop: '10%', }}>
-                        <p className="sectionTitle CB Txt mgB20"> Projects</p>
+                        <p className="sectionTitle CB Txt mgB20">Personal Projects</p>
                     </div>
                     <div style={{}}>
                         <ProjectItem
@@ -152,15 +163,9 @@ class Home extends React.Component {
                         <div className="centered">
                             <img
                                 className="rtImg"
-                                width='50%'
+                                width='100%'
                                 height='auto'
-                                src={'https://realtimesports.io/static/media/frame2.19040e5d.png'}
-                            />
-                            <img
-                                className="rtImg"
-                                width='50%'
-                                height='auto'
-                                src={'https://realtimesports.io/static/media/frame1.21338897.png'}
+                                src={'https://realtimesports.io/static/media/appMockClear.49737975.png'}
                             />
                         </div>
 
@@ -187,7 +192,11 @@ class Home extends React.Component {
 
                 </div>
 
-
+                <div className="footer" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                  <p className='footerTxt'>Made with</p>
+                  <GoHeart style={{color: '#f54242', fontSize: 22, paddingLeft: 5, paddingRight: 5}}/>
+                  <p className='footerTxt'>by Chadd Yuan | 2020</p>
+                </div>             
             </div>
         )
     }

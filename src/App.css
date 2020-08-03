@@ -104,17 +104,17 @@
   padding: 5px 3%;
   border: 1.2px;
   border-style: solid;
-  border-color: rgb(142, 210, 255);
   border-radius: 50px;
-  background-color: rgb(142, 210, 255);
+  border-color: rgb(142, 210, 255);
   display:inline-block; 
   margin-left: 5%;
-  color: #1f2236;
+  color: #fff;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.2s;
+  background-color: rgb(109, 183, 231);
 }
 
 .mgB20 {
@@ -185,4 +185,42 @@
 
 .skill:hover {
   opacity: 0.5;
+}
+
+.resume {
+  font-size: 16px;
+  border: solid;
+  border-width: 1px;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: coral;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.2s;
+}
+
+.resume:hover {
+  padding: 15px;
+  color: aquamarine;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.2s;
+}
+
+.footer {
+  padding: 4% 0;
+  background-color: #dfdfdf;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 600; 
+  color: #525252
 }
